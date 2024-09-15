@@ -1,0 +1,48 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.game-container {
+  max-width: 27rem;
+  min-width: 27rem;
+  max-height: 27rem;
+}
+
+.game-button {
+  max-width: 9rem;
+  max-height: 9rem;
+  transition: background-color 0.2s;
+}
+
+.player-mark {
+  font-size: 6rem;
+}
+
+.game-button:hover {
+  background-color: rgb(255, 255, 255, 10%);
+}
+
+.game-button:disabled {
+  border: 0;
+  opacity: 1;
+}
+
+.popup-bg {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.maxw-23r {
+  max-width: 23rem;
+}
+
+.maxh-9r {
+  max-height: 9rem;
+}
+
+.center-element {
+  inset: 0;
+  position: absolute;
+  margin: auto;
+}
