@@ -5,19 +5,19 @@
 }
 
 .game-container {
-  max-width: 27rem;
-  min-width: 27rem;
-  max-height: 27rem;
+  max-width: 21rem;
+  min-width: 21rem;
+  max-height: 21rem;
 }
 
 .game-button {
-  max-width: 9rem;
-  max-height: 9rem;
+  max-width: 7rem;
+  max-height: 7rem;
   transition: background-color 0.2s;
 }
 
 .player-mark {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .game-button:hover {
