@@ -9,10 +9,12 @@
 
 Tic-tac-toe, também conhecido como jogo da velha, é um jogo simples que eu criei para divertição.
 
+Devido a alguns elementos utilizados na criação do jogo, a interface será pequena para garantir a compatibilidade com dispositivos Android.\
+_Uma atualização para resolver esse problema estará disponível em breve._
+
 <h2 id="como-acessar">Como acessar</h2>
 
 Você pode acessá-lo [aqui](https://tic-tac-toe-gal.netlify.app/) ou através do link na seção 'About'.
-
 
 <h2 id="como-usá-la">Como usá-lo</h2>
 
