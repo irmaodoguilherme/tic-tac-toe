@@ -39,7 +39,7 @@ const checkPattern = (playerPattern, string, buttons) => {
 
 const getPlayerMark = icon => {
   const playerMark = document.createElement('i')
-  playerMark.setAttribute('class', `bi bi-${icon} text-white player-mark`)
+  playerMark.setAttribute('class', `center-element bi bi-${icon} text-white player-mark`)
 
   return playerMark
 }

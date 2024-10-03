@@ -1,7 +1,9 @@
 const gameContainer = document.querySelector('[data-js="game-container"]')
 const buttonPlayAgain = document.querySelector('[data-js="play-again"]')
+const popupContainer = document.querySelector('[data-js="popup-container"]')
 
-const resetGame = () => {
+const resetGame = async () => {
+  const { hideOrShowPopup } = await import('./ticTacToe.js')
   const buttons = [...gameContainer.children]
 
   buttons.forEach(button => {
@@ -14,6 +16,7 @@ const resetGame = () => {
       button.children[0].remove()
     }
   })
+
 
   hideOrShowPopup()
 }
@@ -35,5 +38,16 @@ const handleButtonClicks = async e => {
   handleCPUTurn(buttons)
 }
 
+const hidePopup = e => {
+  const selectedDatas = ['popup-container', 'close-popup']
+  const clickedElementData = e.target.dataset.js
+
+  if (selectedDatas.includes(clickedElementData)) {
+    popupContainer.classList.add('d-none')
+    return
+  }
+}
+
+popupContainer.addEventListener('click', hidePopup)
 buttonPlayAgain.addEventListener('click', resetGame)
 gameContainer.addEventListener('click', handleButtonClicks)
